@@ -4,7 +4,7 @@ from django_countries import countries
 
 from postal.settings import POSTAL_ADDRESS_LINE1, POSTAL_ADDRESS_LINE2, POSTAL_ADDRESS_CITY, POSTAL_ADDRESS_STATE, POSTAL_ADDRESS_CODE
 
-country_list = (('', '-'*45),) + countries.COUNTRIES
+country_list = (('', '-'*45),) + countries.countries
 country_dict = {}
 for (key, value) in countries.COUNTRIES: country_dict[key] = value
 
